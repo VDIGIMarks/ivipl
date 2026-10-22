@@ -1,0 +1,855 @@
+[
+  {
+    "id": "b1426c95-fc43-4059-aad0-13fbe4921c49",
+    "_id": "6ad5e37862e63b274b6186e2",
+    "title": "Golden I",
+    "subtitle": "COMMERCIAL LANDMARK WITH ENDLESS OPPORTUNITIES",
+    "type": "commercial",
+    "location": "Greater Noida",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+    "description": "Iconic glass-facade tower commanding top visibility on the expressway, ideal for flagship retail and enterprise headquarters.",
+    "badge": "Mixed Use",
+    "badgeBg": "bg-purple-900/60",
+    "features": [
+      {
+        "text": "High Visibility",
+        "iconName": "Eye"
+      },
+      {
+        "text": "Excellent Connectivity",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Ideal for Retail & Office",
+        "iconName": "Store"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "High Visibility",
+        "iconName": "Eye"
+      },
+      {
+        "text": "Excellent Connectivity",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Ideal for Retail & Office",
+        "iconName": "Store"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.364Z",
+    "updatedAt": "2026-10-19T09:31:36.364Z"
+  },
+  {
+    "id": "f3015261-77df-46e3-9ea6-f24ecb155591",
+    "_id": "6ad5e37862e63b274b6186db",
+    "title": "NX One",
+    "subtitle": "A DESTINATION FOR MODERN BUSINESSES",
+    "type": "commercial",
+    "location": "Uttar Pradesh",
+    "image": "/images/r9.png",
+    "description": "An integrated commercial ecosystem featuring smart office suites, boutique retail, and entertainment centers.",
+    "badge": "Premium Spaces",
+    "badgeBg": "bg-amber-800/60",
+    "features": [
+      {
+        "text": "Office Spaces",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Retail & F&B",
+        "iconName": "Store"
+      },
+      {
+        "text": "Modern Infrastructure",
+        "iconName": "Cpu"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Iconic Architecture",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Flexible Spaces",
+        "iconName": "Expand"
+      },
+      {
+        "text": "Strong Investment Value",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.319Z",
+    "updatedAt": "2026-10-19T09:31:36.319Z"
+  },
+  {
+    "id": "f10a05ef-7ffb-4c65-a0c5-7e721a6dd326",
+    "_id": "6ad5e37862e63b274b6186d4",
+    "title": "U:Fairia",
+    "subtitle": "WHERE BUSINESS MEETS OPPORTUNITY",
+    "type": "commercial",
+    "location": "Delhi",
+    "image": "/images/ukpimg.png",
+    "description": "A signature commercial address blending executive corporate towers with vibrant lifestyle and gourmet avenues.",
+    "badge": "Business Hub",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Premium Offices",
+        "iconName": "Building"
+      },
+      {
+        "text": "Business Ecosystem",
+        "iconName": "Briefcase"
+      },
+      {
+        "text": "Strategic Location",
+        "iconName": "Compass"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Strategic Location",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "World-Class Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Great Connectivity",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.264Z",
+    "updatedAt": "2026-10-19T09:31:36.264Z"
+  },
+  {
+    "id": "3dfa5db5-efa7-45b2-b675-9479857cb02c",
+    "_id": "6ad5e37862e63b274b6186cd",
+    "title": "Iris Trehan",
+    "subtitle": "A NEW ERA OF BUSINESS SPACES",
+    "type": "commercial",
+    "location": "Noida",
+    "image": "/images/iris.png",
+    "description": "High-density retail corridors and grade-A corporate suites designed for maximum footfall and investment yield.",
+    "badge": "Retail & Office",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Retail Spaces",
+        "iconName": "Store"
+      },
+      {
+        "text": "Food & Entertainment",
+        "iconName": "Coffee"
+      },
+      {
+        "text": "High Footfall",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Prime Location",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "Modern Design",
+        "iconName": "Building2"
+      },
+      {
+        "text": "High Footfall",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.219Z",
+    "updatedAt": "2026-10-19T09:31:36.219Z"
+  },
+  {
+    "id": "346a26ad-484d-417a-93c8-24d96d7f13e4",
+    "_id": "6ad5e37862e63b274b6186c9",
+    "title": "Oasis GrandStand",
+    "subtitle": "PREMIUM SPORTS ADDRESS",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r9.png",
+    "description": "A dream address for sports enthusiasts and active families, right next to world-class sports facilities.",
+    "badge": "Sports City",
+    "badgeBg": "bg-orange-600/60",
+    "features": [
+      {
+        "text": "Stadium Views",
+        "iconName": "Activity"
+      },
+      {
+        "text": "Olympic-Length Pool",
+        "iconName": "Droplet"
+      },
+      {
+        "text": "Tennis & Squash Courts",
+        "iconName": "Zap"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.173Z",
+    "updatedAt": "2026-10-19T09:31:36.173Z"
+  },
+  {
+    "id": "67770af4-18b9-4ba9-b646-fc2c7f351351",
+    "_id": "6ad5e37862e63b274b6186c5",
+    "title": "Oasis Venetia Heights",
+    "subtitle": "ITALIAN-INSPIRED LIVING",
+    "type": "residential",
+    "location": "Greater Noida West",
+    "image": "/images/r8.png",
+    "description": "Renaissance aesthetics reimagined for modern life, featuring central plazas, fountains, and private cabanas.",
+    "badge": "Venetian",
+    "badgeBg": "bg-rose-600/60",
+    "features": [
+      {
+        "text": "Central Courtyard",
+        "iconName": "Layout"
+      },
+      {
+        "text": "Club Facilities",
+        "iconName": "Coffee"
+      },
+      {
+        "text": "Ample Parking",
+        "iconName": "Car"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.129Z",
+    "updatedAt": "2026-10-19T09:31:36.129Z"
+  },
+  {
+    "id": "455514f0-6a8e-481c-bf4b-8262ff20145a",
+    "_id": "6ad5e37862e63b274b6186c1",
+    "title": "KVD Wind Park",
+    "subtitle": "SERENE LANDSCAPES",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r7.png",
+    "description": "Aerodynamic windward design keeping every home breezy, natural, and harmonious with Vastu principles.",
+    "badge": "Eco Living",
+    "badgeBg": "bg-teal-600/60",
+    "features": [
+      {
+        "text": "Windward Design",
+        "iconName": "Wind"
+      },
+      {
+        "text": "Open Terraces",
+        "iconName": "Maximize"
+      },
+      {
+        "text": "Vastu Compliant",
+        "iconName": "Compass"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.087Z",
+    "updatedAt": "2026-10-19T09:31:36.087Z"
+  },
+  {
+    "id": "d5743ea5-ffdb-4b2d-ab99-7215f15105b5",
+    "_id": "6ad5e37762e63b274b6186bd",
+    "title": "La Royale",
+    "subtitle": "ROYAL LIFESTYLE & ELEGANCE",
+    "type": "residential",
+    "location": "Noida",
+    "image": "/images/r6.png",
+    "description": "Stately neoclassical residences designed for connoisseurs of timeless elegance and elite society.",
+    "badge": "Signature",
+    "badgeBg": "bg-purple-600/60",
+    "features": [
+      {
+        "text": "Grand Entry",
+        "iconName": "Door"
+      },
+      {
+        "text": "Prime Connectivity",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "Secure Gated Community",
+        "iconName": "Shield"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:36.044Z",
+    "updatedAt": "2026-10-19T09:31:36.044Z"
+  },
+  {
+    "id": "36e26dc0-3c76-421d-9aa8-1a6531514961",
+    "_id": "6ad5e37762e63b274b6186b9",
+    "title": "RN Construction",
+    "subtitle": "CRAFTED WITH PRECISION",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r5.png",
+    "description": "Architectural precision paired with premium engineering materials for residences that stand the test of time.",
+    "badge": "Architectural",
+    "badgeBg": "bg-indigo-600/60",
+    "features": [
+      {
+        "text": "Modern Elevation",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Premium Quality",
+        "iconName": "Award"
+      },
+      {
+        "text": "Independent Homes",
+        "iconName": "Home"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:35.991Z",
+    "updatedAt": "2026-10-19T09:31:35.991Z"
+  },
+  {
+    "id": "2133d4b1-c6de-47cf-b93c-731f1a624392",
+    "_id": "6ad5e37762e63b274b6186b5",
+    "title": "Brook & Rivulet",
+    "subtitle": "MODERN WATERFRONT LIVING",
+    "type": "residential",
+    "location": "Noida Extension",
+    "image": "/images/r4.png",
+    "description": "Waterfront tranquility with designer residences overlooking pristine landscaped streams and walking trails.",
+    "badge": "Waterfront",
+    "badgeBg": "bg-cyan-600/60",
+    "features": [
+      {
+        "text": "High-Rise Living",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Luxury Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Scenic Views",
+        "iconName": "Eye"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:35.948Z",
+    "updatedAt": "2026-10-19T09:31:35.948Z"
+  },
+  {
+    "id": "98a2e8be-3619-41a7-a74a-1b452d873cbd",
+    "_id": "6ad5e37762e63b274b6186b1",
+    "title": "Diligent Builders",
+    "subtitle": "HOMES FOR A BRIGHTER TOMORROW",
+    "type": "residential",
+    "location": "Uttar Pradesh",
+    "image": "/images/r3.png",
+    "description": "Exceptional quality homes designed to foster community, family comfort, and long-term asset value.",
+    "badge": "Value Plus",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Quality Construction",
+        "iconName": "ShieldCheck"
+      },
+      {
+        "text": "Trusted Developer",
+        "iconName": "CheckCircle"
+      },
+      {
+        "text": "Family Friendly",
+        "iconName": "Users"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:35.904Z",
+    "updatedAt": "2026-10-19T09:31:35.904Z"
+  },
+  {
+    "id": "b8211cd4-b303-46b8-aaff-ab85f4079b56",
+    "_id": "6ad5e37762e63b274b6186ad",
+    "title": "Godrej Majesty",
+    "subtitle": "A ROYAL WAY OF LIVING",
+    "type": "residential",
+    "location": "Delhi",
+    "image": "/images/r2.png",
+    "description": "Designed for royalty with lush private green lawns, double-height grand lobbies, and premier security.",
+    "badge": "Exclusive",
+    "badgeBg": "bg-emerald-600/60",
+    "features": [
+      {
+        "text": "Spacious Homes",
+        "iconName": "Home"
+      },
+      {
+        "text": "Green Surroundings",
+        "iconName": "Trees"
+      },
+      {
+        "text": "World-Class Amenities",
+        "iconName": "Award"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:35.858Z",
+    "updatedAt": "2026-10-19T09:31:35.858Z"
+  },
+  {
+    "id": "4e8e031b-ce23-4fc2-bd10-7f6e83cb6e69",
+    "_id": "6ad5e37762e63b274b6186a9",
+    "title": "Golden Grande",
+    "subtitle": "LUXURY LIVING REDEFINED",
+    "type": "residential",
+    "location": "Noida",
+    "image": "/images/r1.png",
+    "description": "Experience ultra-luxury high-rise living crafted with modern Italian architecture and panoramic city views.",
+    "badge": "Bestseller",
+    "badgeBg": "bg-amber-600/60",
+    "features": [
+      {
+        "text": "Premium Apartments",
+        "iconName": "Building"
+      },
+      {
+        "text": "Modern Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Prime Location",
+        "iconName": "MapPin"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T09:31:35.805Z",
+    "updatedAt": "2026-10-19T09:31:35.807Z"
+  },
+  {
+    "id": "589f524c-66a9-4983-9717-df035461af06",
+    "title": "Golden I",
+    "subtitle": "COMMERCIAL LANDMARK WITH ENDLESS OPPORTUNITIES",
+    "type": "commercial",
+    "location": "Greater Noida",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+    "description": "Iconic glass-facade tower commanding top visibility on the expressway, ideal for flagship retail and enterprise headquarters.",
+    "badge": "Mixed Use",
+    "badgeBg": "bg-purple-900/60",
+    "features": [
+      {
+        "text": "High Visibility",
+        "iconName": "Eye"
+      },
+      {
+        "text": "Excellent Connectivity",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Ideal for Retail & Office",
+        "iconName": "Store"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "High Visibility",
+        "iconName": "Eye"
+      },
+      {
+        "text": "Excellent Connectivity",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Ideal for Retail & Office",
+        "iconName": "Store"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.148Z",
+    "updatedAt": "2026-10-19T06:05:26.148Z"
+  },
+  {
+    "id": "f10c9291-82ea-451b-a6b7-17b8b73d7686",
+    "title": "NX One",
+    "subtitle": "A DESTINATION FOR MODERN BUSINESSES",
+    "type": "commercial",
+    "location": "Uttar Pradesh",
+    "image": "/images/r9.png",
+    "description": "An integrated commercial ecosystem featuring smart office suites, boutique retail, and entertainment centers.",
+    "badge": "Premium Spaces",
+    "badgeBg": "bg-amber-800/60",
+    "features": [
+      {
+        "text": "Office Spaces",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Retail & F&B",
+        "iconName": "Store"
+      },
+      {
+        "text": "Modern Infrastructure",
+        "iconName": "Cpu"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Iconic Architecture",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Flexible Spaces",
+        "iconName": "Expand"
+      },
+      {
+        "text": "Strong Investment Value",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.147Z",
+    "updatedAt": "2026-10-19T06:05:26.147Z"
+  },
+  {
+    "id": "11154c96-8cd5-4210-a526-f5a4aea09971",
+    "title": "U:Fairia",
+    "subtitle": "WHERE BUSINESS MEETS OPPORTUNITY",
+    "type": "commercial",
+    "location": "Delhi",
+    "image": "/images/ukpimg.png",
+    "description": "A signature commercial address blending executive corporate towers with vibrant lifestyle and gourmet avenues.",
+    "badge": "Business Hub",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Premium Offices",
+        "iconName": "Building"
+      },
+      {
+        "text": "Business Ecosystem",
+        "iconName": "Briefcase"
+      },
+      {
+        "text": "Strategic Location",
+        "iconName": "Compass"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Strategic Location",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "World-Class Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Great Connectivity",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.145Z",
+    "updatedAt": "2026-10-19T06:05:26.145Z"
+  },
+  {
+    "id": "928a9af4-79ca-4b12-acd7-29ae22544f74",
+    "title": "Iris Trehan",
+    "subtitle": "A NEW ERA OF BUSINESS SPACES",
+    "type": "commercial",
+    "location": "Noida",
+    "image": "/images/iris.png",
+    "description": "High-density retail corridors and grade-A corporate suites designed for maximum footfall and investment yield.",
+    "badge": "Retail & Office",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Retail Spaces",
+        "iconName": "Store"
+      },
+      {
+        "text": "Food & Entertainment",
+        "iconName": "Coffee"
+      },
+      {
+        "text": "High Footfall",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "highlights": [
+      {
+        "text": "Prime Location",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "Modern Design",
+        "iconName": "Building2"
+      },
+      {
+        "text": "High Footfall",
+        "iconName": "TrendingUp"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.143Z",
+    "updatedAt": "2026-10-19T06:05:26.143Z"
+  },
+  {
+    "id": "64216658-0148-4dcf-9646-20ffb1b73b52",
+    "title": "Oasis GrandStand",
+    "subtitle": "PREMIUM SPORTS ADDRESS",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r9.png",
+    "description": "A dream address for sports enthusiasts and active families, right next to world-class sports facilities.",
+    "badge": "Sports City",
+    "badgeBg": "bg-orange-600/60",
+    "features": [
+      {
+        "text": "Stadium Views",
+        "iconName": "Activity"
+      },
+      {
+        "text": "Olympic-Length Pool",
+        "iconName": "Droplet"
+      },
+      {
+        "text": "Tennis & Squash Courts",
+        "iconName": "Zap"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.141Z",
+    "updatedAt": "2026-10-19T06:05:26.141Z"
+  },
+  {
+    "id": "e6aedc4a-88cc-4338-9721-50b7e68a8f8d",
+    "title": "Oasis Venetia Heights",
+    "subtitle": "ITALIAN-INSPIRED LIVING",
+    "type": "residential",
+    "location": "Greater Noida West",
+    "image": "/images/r8.png",
+    "description": "Renaissance aesthetics reimagined for modern life, featuring central plazas, fountains, and private cabanas.",
+    "badge": "Venetian",
+    "badgeBg": "bg-rose-600/60",
+    "features": [
+      {
+        "text": "Central Courtyard",
+        "iconName": "Layout"
+      },
+      {
+        "text": "Club Facilities",
+        "iconName": "Coffee"
+      },
+      {
+        "text": "Ample Parking",
+        "iconName": "Car"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.138Z",
+    "updatedAt": "2026-10-19T06:05:26.138Z"
+  },
+  {
+    "id": "57e91c13-85a2-45ea-9177-3bb1a415b14c",
+    "title": "KVD Wind Park",
+    "subtitle": "SERENE LANDSCAPES",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r7.png",
+    "description": "Aerodynamic windward design keeping every home breezy, natural, and harmonious with Vastu principles.",
+    "badge": "Eco Living",
+    "badgeBg": "bg-teal-600/60",
+    "features": [
+      {
+        "text": "Windward Design",
+        "iconName": "Wind"
+      },
+      {
+        "text": "Open Terraces",
+        "iconName": "Maximize"
+      },
+      {
+        "text": "Vastu Compliant",
+        "iconName": "Compass"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.135Z",
+    "updatedAt": "2026-10-19T06:05:26.135Z"
+  },
+  {
+    "id": "05eea50e-0bcb-4696-8d36-942ad34e2b13",
+    "title": "La Royale",
+    "subtitle": "ROYAL LIFESTYLE & ELEGANCE",
+    "type": "residential",
+    "location": "Noida",
+    "image": "/images/r6.png",
+    "description": "Stately neoclassical residences designed for connoisseurs of timeless elegance and elite society.",
+    "badge": "Signature",
+    "badgeBg": "bg-purple-600/60",
+    "features": [
+      {
+        "text": "Grand Entry",
+        "iconName": "Door"
+      },
+      {
+        "text": "Prime Connectivity",
+        "iconName": "MapPin"
+      },
+      {
+        "text": "Secure Gated Community",
+        "iconName": "Shield"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.133Z",
+    "updatedAt": "2026-10-19T06:05:26.133Z"
+  },
+  {
+    "id": "ca173f5d-9c17-4413-b228-2faf190ead00",
+    "title": "RN Construction",
+    "subtitle": "CRAFTED WITH PRECISION",
+    "type": "residential",
+    "location": "Greater Noida",
+    "image": "/images/r5.png",
+    "description": "Architectural precision paired with premium engineering materials for residences that stand the test of time.",
+    "badge": "Architectural",
+    "badgeBg": "bg-indigo-600/60",
+    "features": [
+      {
+        "text": "Modern Elevation",
+        "iconName": "Layers"
+      },
+      {
+        "text": "Premium Quality",
+        "iconName": "Award"
+      },
+      {
+        "text": "Independent Homes",
+        "iconName": "Home"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.132Z",
+    "updatedAt": "2026-10-19T06:05:26.132Z"
+  },
+  {
+    "id": "de37a578-2434-4672-8207-d3139cbcdf76",
+    "title": "Brook & Rivulet",
+    "subtitle": "MODERN WATERFRONT LIVING",
+    "type": "residential",
+    "location": "Noida Extension",
+    "image": "/images/r4.png",
+    "description": "Waterfront tranquility with designer residences overlooking pristine landscaped streams and walking trails.",
+    "badge": "Waterfront",
+    "badgeBg": "bg-cyan-600/60",
+    "features": [
+      {
+        "text": "High-Rise Living",
+        "iconName": "Building2"
+      },
+      {
+        "text": "Luxury Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Scenic Views",
+        "iconName": "Eye"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.131Z",
+    "updatedAt": "2026-10-19T06:05:26.131Z"
+  },
+  {
+    "id": "2cfbfee3-a209-4a86-89c5-66ffa0efeb2c",
+    "title": "Diligent Builders",
+    "subtitle": "HOMES FOR A BRIGHTER TOMORROW",
+    "type": "residential",
+    "location": "Uttar Pradesh",
+    "image": "/images/r3.png",
+    "description": "Exceptional quality homes designed to foster community, family comfort, and long-term asset value.",
+    "badge": "Value Plus",
+    "badgeBg": "bg-blue-600/60",
+    "features": [
+      {
+        "text": "Quality Construction",
+        "iconName": "ShieldCheck"
+      },
+      {
+        "text": "Trusted Developer",
+        "iconName": "CheckCircle"
+      },
+      {
+        "text": "Family Friendly",
+        "iconName": "Users"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.129Z",
+    "updatedAt": "2026-10-19T06:05:26.129Z"
+  },
+  {
+    "id": "930673c9-3131-46ef-a340-04ed475c88e5",
+    "title": "Godrej Majesty",
+    "subtitle": "A ROYAL WAY OF LIVING",
+    "type": "residential",
+    "location": "Delhi",
+    "image": "/images/r2.png",
+    "description": "Designed for royalty with lush private green lawns, double-height grand lobbies, and premier security.",
+    "badge": "Exclusive",
+    "badgeBg": "bg-emerald-600/60",
+    "features": [
+      {
+        "text": "Spacious Homes",
+        "iconName": "Home"
+      },
+      {
+        "text": "Green Surroundings",
+        "iconName": "Trees"
+      },
+      {
+        "text": "World-Class Amenities",
+        "iconName": "Award"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.126Z",
+    "updatedAt": "2026-10-19T06:05:26.126Z"
+  },
+  {
+    "id": "73c264d9-dc32-45f2-8f9a-809f02aa558d",
+    "title": "Golden Grande",
+    "subtitle": "LUXURY LIVING REDEFINED",
+    "type": "residential",
+    "location": "Noida",
+    "image": "/images/r1.png",
+    "description": "Experience ultra-luxury high-rise living crafted with modern Italian architecture and panoramic city views.",
+    "badge": "Bestseller",
+    "badgeBg": "bg-amber-600/60",
+    "features": [
+      {
+        "text": "Premium Apartments",
+        "iconName": "Building"
+      },
+      {
+        "text": "Modern Amenities",
+        "iconName": "Sparkles"
+      },
+      {
+        "text": "Prime Location",
+        "iconName": "MapPin"
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-10-19T06:05:26.110Z",
+    "updatedAt": "2026-10-19T06:05:26.123Z"
+  }
+]

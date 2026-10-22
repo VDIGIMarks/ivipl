@@ -1,0 +1,12 @@
+[
+  {
+    "id": "f5548806-29d7-46fd-abb3-b788506d916d",
+    "name": "Sunita Rao",
+    "email": "sunita.rao@example.com",
+    "phone": "+91 99887 76655",
+    "propertyType": "commercial_office",
+    "message": "Requesting commercial space availability in Sector 62.",
+    "createdAt": "2026-10-19T06:06:08.395Z",
+    "updatedAt": "2026-10-19T06:06:08.395Z"
+  }
+]

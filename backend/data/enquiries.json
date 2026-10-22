@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2677f1f2-a5c1-477e-8f40-322e9dd1be0e",
+    "_id": "6ad5e57c802834511342f4e8",
+    "name": "Deepak Verma",
+    "phone": "9812345678",
+    "email": "shivam@gmail.com",
+    "project": "Oasis Venetia Heights",
+    "inquiryType": "Site Visit",
+    "preferredTime": "Anytime",
+    "message": "k",
+    "whatsappOptIn": true,
+    "source": "Website",
+    "status": "new",
+    "createdAt": "2026-10-19T09:40:12.997Z",
+    "updatedAt": "2026-10-19T09:40:12.997Z"
+  },
+  {
+    "id": "0667bbc2-c412-4b83-8963-acafe9a8a1b5",
+    "name": "Deepak Verma",
+    "phone": "9812345678",
+    "email": "deepak.verma@example.com",
+    "project": "Golden Grande",
+    "inquiryType": "Site Visit",
+    "preferredTime": "Anytime",
+    "message": "Testing backend database integration",
+    "whatsappOptIn": true,
+    "source": "Website",
+    "status": "new",
+    "createdAt": "2026-10-19T06:11:42.335Z",
+    "updatedAt": "2026-10-19T06:11:42.335Z"
+  },
+  {
+    "id": "5f3e04cb-d543-4ffb-8961-e5a30b8f85fb",
+    "name": "Rajesh Sharma",
+    "phone": "+91 98765 43210",
+    "email": "rajesh.sharma@example.com",
+    "project": "Golden Grande",
+    "inquiryType": "Site Visit",
+    "preferredTime": "Morning (10:00 AM - 1:00 PM)",
+    "message": "Looking for a 3BHK unit on a higher floor with club facing view.",
+    "whatsappOptIn": true,
+    "source": "Website",
+    "status": "contacted",
+    "createdAt": "2026-10-19T06:05:52.697Z",
+    "updatedAt": "2026-10-19T06:05:59.670Z"
+  }
+]
