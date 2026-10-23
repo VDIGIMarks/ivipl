@@ -10,6 +10,7 @@ import {
     ArrowRight,
     ChevronDown
 } from 'lucide-react';
+import { API_BASE_URL } from '../../config/api';
 
 export default function CHomeS1() {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ export default function CHomeS1() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await fetch('http://localhost:5000/api/contacts', {
+            await fetch(`${API_BASE_URL}/api/contacts`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

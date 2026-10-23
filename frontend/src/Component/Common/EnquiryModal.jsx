@@ -15,6 +15,7 @@ import {
   Share2
 } from 'lucide-react';
 import { useEnquiry } from '../../context/EnquiryContext';
+import { API_BASE_URL } from '../../config/api';
 
 const ALL_PROJECTS = [
   // Residential
@@ -122,7 +123,7 @@ export default function EnquiryModal() {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:5000/api/enquiries', {
+      const response = await fetch(`${API_BASE_URL}/api/enquiries`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

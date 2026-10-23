@@ -255,18 +255,13 @@ export default function Footer() {
 
                         {/* Social Media Icons */}
                         <div className="flex items-center gap-2 pt-1">
-                            <a href="#facebook" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="Facebook">
+                            <a href="https://www.facebook.com/InvestInfratech" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="Facebook">
                                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
                             </a>
-                            <a href="#instagram" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="Instagram">
+                            <a href="https://www.instagram.com/investvedya?mdxt=anRzN2p5bmc2dHkz" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="Instagram">
                                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" strokeWidth="2"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></line></svg>
                             </a>
-                            <a href="#linkedin" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="LinkedIn">
-                                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
-                            </a>
-                            <a href="#youtube" className="w-8 h-8 rounded-full bg-white/5 border border-white/20 flex items-center justify-center text-white hover:bg-amber-400 hover:text-[#031930] transition-all" aria-label="YouTube">
-                                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"></path></svg>
-                            </a>
+
                         </div>
                     </div>
 

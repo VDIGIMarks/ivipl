@@ -7,19 +7,25 @@ const projects = [
     id: 1,
     title: "A modern residential destination designed for a better and smarter tomorrow.",
     icon: Home,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/futurepimg.jpg",
   },
   {
     id: 2,
     title: "A premium villa community surrounded by nature, designed for peaceful and luxurious living.",
     icon: Leaf,
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/futurepimg3.jpg",
   },
   {
     id: 3,
     title: "A landmark commercial and lifestyle destination for business, leisure and modern experiences.",
     icon: Building2,
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    id: 4,
+    title: "A landmark commercial and lifestyle destination for business, leisure and modern experiences.",
+    icon: Building2,
+    image: "/images/futurepimg4.jpg",
   }
 ];
 
@@ -244,8 +250,8 @@ export default function FuturePS3() {
               if (!isSpinning) setCurrentIndex(idx);
             }}
             className={`transition-all duration-300 rounded-full ${currentIndex === idx
-                ? "w-3 h-3 bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)] border border-amber-200"
-                : "w-2 h-2 bg-white/40 hover:bg-white/70"
+              ? "w-3 h-3 bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)] border border-amber-200"
+              : "w-2 h-2 bg-white/40 hover:bg-white/70"
               }`}
             aria-label={`Go to slide ${idx + 1}`}
           />
