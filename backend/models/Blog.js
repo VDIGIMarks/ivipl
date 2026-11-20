@@ -22,7 +22,11 @@ export const Blog = {
   find: async (filter = {}) => {
     if (isMongoActive()) {
       try {
-        return await MongoBlog.find(filter).sort({ createdAt: -1 });
+        const mongoQuery = {};
+        if (filter.category && filter.category !== 'All Blogs') {
+          mongoQuery.category = { $regex: new RegExp(`^${filter.category}$`, 'i') };
+        }
+        return await MongoBlog.find(mongoQuery).sort({ createdAt: -1 });
       } catch (err) {
         console.error('Mongo error in Blog.find:', err.message);
       }

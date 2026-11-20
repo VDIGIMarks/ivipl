@@ -64,6 +64,18 @@ export default function ProjectsAdmin() {
     }
   };
 
+  const handleSeed = async () => {
+    setLoading(true);
+    try {
+      await api.seedDatabase(true);
+      await loadProjects();
+    } catch (err) {
+      alert('Failed to seed projects: ' + err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const filteredProjects = projects.filter((p) => {
     const matchesType =
       typeFilter === 'all' ||
@@ -134,8 +146,28 @@ export default function ProjectsAdmin() {
       {loading ? (
         <div className="py-12 text-center text-slate-400 text-sm">Loading projects...</div>
       ) : filteredProjects.length === 0 ? (
-        <div className="py-12 text-center text-slate-400 text-sm bg-slate-900 border border-slate-800 rounded-2xl">
-          No projects found.
+        <div className="py-12 px-4 text-center bg-slate-900 border border-slate-800 rounded-2xl space-y-4">
+          <Building2 className="w-12 h-12 text-slate-600 mx-auto" />
+          <div>
+            <h3 className="text-base font-semibold text-white">No Projects Found</h3>
+            <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto">
+              Your database currently has no real estate projects. You can seed 13 initial portfolio projects automatically or add one manually.
+            </p>
+          </div>
+          <div className="flex justify-center gap-3 pt-2">
+            <button
+              onClick={handleSeed}
+              className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold shadow-md shadow-indigo-600/30 transition cursor-pointer"
+            >
+              Seed 13 Sample Projects
+            </button>
+            <button
+              onClick={() => setShowAddModal(true)}
+              className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-medium border border-slate-700 transition cursor-pointer"
+            >
+              Add Project Manually
+            </button>
+          </div>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

@@ -26,8 +26,9 @@ async function request(endpoint, options = {}) {
 }
 
 export const api = {
-  // Service health
+  // Service health & seeding
   checkHealth: () => request('/health'),
+  seedDatabase: (force = false) => request('/seed' + (force ? '?force=true' : ''), { method: 'POST' }),
 
   // Enquiries
   getEnquiries: (params = {}) => {

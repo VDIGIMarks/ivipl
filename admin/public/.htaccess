@@ -67,3 +67,4 @@ AddDefaultCharset UTF-8
 </IfModule>
 
 ErrorDocument 404 /index.html
+

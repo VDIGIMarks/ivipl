@@ -3,7 +3,11 @@ import { Project } from '../models/Project.js';
 export const getProjects = async (req, res) => {
   try {
     const { type, location, featured, search } = req.query;
-    let projects = await Project.find({ type, location });
+    const filter = {};
+    if (type) filter.type = type;
+    if (location) filter.location = location;
+
+    let projects = await Project.find(filter);
 
     if (featured !== undefined) {
       const isFeatured = featured === 'true';

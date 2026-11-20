@@ -11,6 +11,8 @@ import contactRoutes from './routes/contactRoutes.js';
 import projectRoutes from './routes/projectRoutes.js';
 import blogRoutes from './routes/blogRoutes.js';
 import subscriberRoutes from './routes/subscriberRoutes.js';
+import { Project } from './models/Project.js';
+import { Blog } from './models/Blog.js';
 
 dotenv.config();
 
@@ -96,6 +98,30 @@ app.get('/api/health', (req, res) => {
     },
     uptimeSeconds: Math.floor(process.uptime())
   });
+});
+
+// Database Seeding Endpoint (for instant manual seeding or cloud initialization)
+app.all('/api/seed', async (req, res) => {
+  try {
+    const force = req.query.force === 'true' || req.method === 'POST';
+    await seedDatabase(force);
+    const projects = await Project.find();
+    const blogs = await Blog.find();
+    return res.status(200).json({
+      success: true,
+      message: 'Database seeded successfully!',
+      database: isMongoActive() ? 'MongoDB' : 'Local JSON',
+      projectsCount: projects.length,
+      blogsCount: blogs.length
+    });
+  } catch (err) {
+    console.error('Seed endpoint error:', err);
+    return res.status(500).json({
+      success: false,
+      message: 'Failed to seed database.',
+      error: err.message
+    });
+  }
 });
 
 // Mount Routes

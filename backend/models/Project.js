@@ -36,7 +36,14 @@ export const Project = {
   find: async (filter = {}) => {
     if (isMongoActive()) {
       try {
-        return await MongoProject.find(filter).sort({ createdAt: -1 });
+        const mongoQuery = {};
+        if (filter.type) {
+          mongoQuery.type = filter.type.toLowerCase();
+        }
+        if (filter.location) {
+          mongoQuery.location = { $regex: filter.location, $options: 'i' };
+        }
+        return await MongoProject.find(mongoQuery).sort({ createdAt: -1 });
       } catch (err) {
         console.error('Mongo error in Project.find:', err.message);
       }

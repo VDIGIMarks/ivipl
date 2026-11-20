@@ -3,7 +3,10 @@ import { Blog } from '../models/Blog.js';
 export const getBlogs = async (req, res) => {
   try {
     const { category, search } = req.query;
-    let blogs = await Blog.find({ category });
+    const filter = {};
+    if (category && category !== 'All Blogs') filter.category = category;
+
+    let blogs = await Blog.find(filter);
 
     if (search) {
       const q = search.toLowerCase();
