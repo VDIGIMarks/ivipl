@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Filter, Trash2, CheckCircle2, Phone, Mail, Calendar, Building, RefreshCw } from 'lucide-react';
+import {
+  Search,
+  Trash2,
+  Phone,
+  Mail,
+  RefreshCw,
+  FileSpreadsheet,
+  FileDown
+} from 'lucide-react';
 import api from '../services/api';
+import { exportToExcel, exportToPDF } from '../utils/exportUtils';
 
 export default function EnquiriesAdmin() {
   const [enquiries, setEnquiries] = useState([]);
@@ -60,23 +69,103 @@ export default function EnquiriesAdmin() {
     return matchesStatus && matchesSearch;
   });
 
+  // Export to Excel (.xlsx)
+  const handleExportExcel = () => {
+    const exportData = filteredEnquiries.map((e, index) => ({
+      '#': index + 1,
+      'Lead Name': e.name || '',
+      'Phone Number': e.phone || '',
+      'Email Address': e.email || '',
+      'Project': e.project || 'General Portfolio',
+      'Inquiry Type': e.inquiryType || 'Site Visit',
+      'Preferred Time': e.preferredTime || 'Anytime',
+      'Status': (e.status || 'new').toUpperCase(),
+      'User Message': e.message || '',
+      'WhatsApp Opt-in': e.whatsappOptIn !== false ? 'Yes' : 'No',
+      'Source': e.source || 'Website',
+      'Date Submitted': e.createdAt
+        ? new Date(e.createdAt).toLocaleString('en-IN')
+        : 'N/A'
+    }));
+    exportToExcel(exportData, 'IVIPL_Enquiries_Report', 'Enquiries');
+  };
+
+  // Export to PDF (.pdf)
+  const handleExportPDF = () => {
+    const headers = [
+      '#',
+      'Lead Name',
+      'Phone',
+      'Email',
+      'Project',
+      'Inquiry Type',
+      'Status',
+      'Date'
+    ];
+    const rows = filteredEnquiries.map((e, index) => [
+      index + 1,
+      e.name || '',
+      e.phone || '',
+      e.email || '',
+      e.project || 'General Portfolio',
+      e.inquiryType || 'Site Visit',
+      (e.status || 'new').toUpperCase(),
+      e.createdAt
+        ? new Date(e.createdAt).toLocaleDateString('en-IN')
+        : 'N/A'
+    ]);
+    exportToPDF({
+      title: 'IVIPL — Customer Enquiries & Leads Report',
+      subtitle: `Total Leads Exported: ${rows.length} • Filter Status: ${statusFilter.toUpperCase()}`,
+      headers,
+      rows,
+      fileName: 'IVIPL_Enquiries_Report'
+    });
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-white tracking-tight">Project Enquiries & Leads</h1>
           <p className="text-sm text-slate-400 mt-1">
-            Track user inquiries, schedule visits, and update customer status.
+            Track user inquiries, schedule visits, and export customer data.
           </p>
         </div>
-        <button
-          onClick={loadEnquiries}
-          disabled={loading}
-          className="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition"
-        >
-          <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
-          <span>Refresh</span>
-        </button>
+
+        {/* Action & Export buttons */}
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Export to Excel */}
+          <button
+            onClick={handleExportExcel}
+            disabled={filteredEnquiries.length === 0}
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-xs font-semibold shadow-xs disabled:opacity-40 disabled:cursor-not-allowed transition"
+            title="Download formatted Excel spreadsheet (.xlsx)"
+          >
+            <FileSpreadsheet className="w-4 h-4 text-emerald-400" />
+            <span>Excel (.xlsx)</span>
+          </button>
+
+          {/* Export to PDF */}
+          <button
+            onClick={handleExportPDF}
+            disabled={filteredEnquiries.length === 0}
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-lg text-xs font-semibold shadow-xs disabled:opacity-40 disabled:cursor-not-allowed transition"
+            title="Download printable PDF document (.pdf)"
+          >
+            <FileDown className="w-4 h-4 text-rose-400" />
+            <span>PDF (.pdf)</span>
+          </button>
+
+          <button
+            onClick={loadEnquiries}
+            disabled={loading}
+            className="inline-flex items-center gap-2 px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+            <span>Refresh</span>
+          </button>
+        </div>
       </div>
 
       {/* Filters & Search */}
@@ -97,7 +186,7 @@ export default function EnquiriesAdmin() {
             onChange={(e) => setStatusFilter(e.target.value)}
             className="w-full py-2.5 px-3 bg-slate-900 border border-slate-800 rounded-xl text-slate-200 text-sm focus:outline-none focus:border-indigo-500"
           >
-            <option value="all">All Statuses</option>
+            <option value="all">All Statuses ({enquiries.length})</option>
             <option value="new">New</option>
             <option value="contacted">Contacted</option>
             <option value="scheduled">Scheduled</option>
@@ -189,4 +278,3 @@ export default function EnquiriesAdmin() {
     </div>
   );
 }
-

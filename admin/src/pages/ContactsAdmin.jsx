@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, Trash2, Search, RefreshCw, MessageSquare } from 'lucide-react';
+import {
+  Mail,
+  Phone,
+  Trash2,
+  Search,
+  RefreshCw,
+  FileSpreadsheet,
+  FileDown
+} from 'lucide-react';
 import api from '../services/api';
+import { exportToExcel, exportToPDF } from '../utils/exportUtils';
 
 export default function ContactsAdmin() {
   const [contacts, setContacts] = useState([]);
@@ -43,6 +52,51 @@ export default function ContactsAdmin() {
     );
   });
 
+  // Export to Excel (.xlsx)
+  const handleExportExcel = () => {
+    const exportData = filteredContacts.map((c, index) => ({
+      '#': index + 1,
+      'Sender Name': c.name || '',
+      'Email Address': c.email || '',
+      'Phone Number': c.phone || 'N/A',
+      'Property Type': c.propertyType ? c.propertyType.replace('_', ' ') : 'General',
+      'Message': c.message || '',
+      'Date Submitted': c.createdAt
+        ? new Date(c.createdAt).toLocaleString('en-IN')
+        : 'N/A'
+    }));
+    exportToExcel(exportData, 'IVIPL_Contact_Messages', 'Contacts');
+  };
+
+  // Export to PDF (.pdf)
+  const handleExportPDF = () => {
+    const headers = [
+      '#',
+      'Sender Name',
+      'Email Address',
+      'Phone Number',
+      'Property Interest',
+      'Submitted Date'
+    ];
+    const rows = filteredContacts.map((c, index) => [
+      index + 1,
+      c.name || '',
+      c.email || '',
+      c.phone || 'N/A',
+      c.propertyType ? c.propertyType.replace('_', ' ') : 'General',
+      c.createdAt
+        ? new Date(c.createdAt).toLocaleDateString('en-IN')
+        : 'N/A'
+    ]);
+    exportToPDF({
+      title: 'IVIPL — Website Contact Messages Report',
+      subtitle: `Total Submissions Exported: ${rows.length}`,
+      headers,
+      rows,
+      fileName: 'IVIPL_Contact_Messages'
+    });
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -52,14 +106,40 @@ export default function ContactsAdmin() {
             Submissions received through the public Contact Us page.
           </p>
         </div>
-        <button
-          onClick={loadContacts}
-          disabled={loading}
-          className="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition"
-        >
-          <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
-          <span>Refresh</span>
-        </button>
+
+        {/* Action & Export buttons */}
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Export to Excel */}
+          <button
+            onClick={handleExportExcel}
+            disabled={filteredContacts.length === 0}
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-xs font-semibold shadow-xs disabled:opacity-40 disabled:cursor-not-allowed transition"
+            title="Download formatted Excel spreadsheet (.xlsx)"
+          >
+            <FileSpreadsheet className="w-4 h-4 text-emerald-400" />
+            <span>Excel (.xlsx)</span>
+          </button>
+
+          {/* Export to PDF */}
+          <button
+            onClick={handleExportPDF}
+            disabled={filteredContacts.length === 0}
+            className="inline-flex items-center gap-1.5 px-3 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-lg text-xs font-semibold shadow-xs disabled:opacity-40 disabled:cursor-not-allowed transition"
+            title="Download printable PDF document (.pdf)"
+          >
+            <FileDown className="w-4 h-4 text-rose-400" />
+            <span>PDF (.pdf)</span>
+          </button>
+
+          <button
+            onClick={loadContacts}
+            disabled={loading}
+            className="inline-flex items-center gap-2 px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+            <span>Refresh</span>
+          </button>
+        </div>
       </div>
 
       <div className="relative">
@@ -134,4 +214,3 @@ export default function ContactsAdmin() {
     </div>
   );
 }
-
