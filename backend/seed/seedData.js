@@ -329,7 +329,7 @@ export async function seedDatabase(force = false) {
 }
 
 // If executed directly from CLI: node seed/seedData.js
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
+if (process.argv[1] && import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`) {
   seedDatabase(true).then(() => {
     console.log('Seeding finished.');
     process.exit(0);

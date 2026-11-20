@@ -17,11 +17,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Connect to Database
-await connectDB();
-
-// Auto-seed initial data on startup if not already seeded
-await seedDatabase(false);
+// Connect to Database & seed asynchronously without blocking server startup
+(async () => {
+  try {
+    await connectDB();
+    await seedDatabase(false);
+  } catch (err) {
+    console.error('Database connection/seeding warning:', err.message);
+  }
+})();
 
 // Middleware
 app.use(
@@ -127,3 +131,5 @@ app.listen(PORT, () => {
   console.log(`💾 Database: ${isMongoActive() ? 'MongoDB' : 'Local Persistent JSON'}`);
   console.log(`===============================================`);
 });
+
+export default app;
