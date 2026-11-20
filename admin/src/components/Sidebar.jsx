@@ -80,7 +80,7 @@ export default function Sidebar({ isOpen, onClose }) {
         {/* Live Site Link & Footer Profile */}
         <div className="p-3 border-t border-slate-800 space-y-2">
           <a
-            href="http://localhost:5173"
+            href="https://www.investvedya.com"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-between px-3 py-2 text-xs font-medium text-slate-400 hover:text-indigo-400 hover:bg-slate-800/40 rounded-lg transition"
@@ -89,7 +89,7 @@ export default function Sidebar({ isOpen, onClose }) {
               <ExternalLink className="w-4 h-4" />
               View Live Website
             </span>
-            <span className="text-[10px] bg-slate-800 px-1.5 py-0.5 rounded text-slate-400">5173</span>
+            <span className="text-[10px] bg-slate-800 px-1.5 py-0.5 rounded text-emerald-400">Live</span>
           </a>
 
           <div className="flex items-center justify-between px-3 py-2 bg-slate-800/50 rounded-lg">

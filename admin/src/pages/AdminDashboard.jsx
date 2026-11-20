@@ -140,7 +140,7 @@ export default function AdminDashboard() {
         <div className="flex items-center gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-sm">
           <AlertTriangle className="w-5 h-5 shrink-0" />
           <span>
-            Cannot connect to the backend server at <strong>http://localhost:5000</strong>. Make sure backend is started with <code className="bg-slate-800 px-1 py-0.5 rounded">npm run dev</code> inside <code className="bg-slate-800 px-1 py-0.5 rounded">backend/</code>.
+            Cannot connect to the backend server (<strong>https://apia.investvedya.com/api</strong>). Please ensure the backend is running.
           </span>
         </div>
       )}
